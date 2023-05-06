@@ -7,5 +7,9 @@ func main() {
 
 	if a == 25 {
 		fmt.Println("Correct")
+	} else if a > 20 {
+		fmt.Println("THis is also correct")
+	} else {
+		fmt.Println("Wrong")
 	}
 }
