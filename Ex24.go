@@ -8,10 +8,10 @@ func main() {
 
 	for i, name := range x {
 
-		fmt.Println(i)
+		fmt.Println(i, name)
 
 		for j, val := range name {
-			fmt.Printf("%v, %v", j, val)
+			fmt.Printf("%v, %v\n", j, val)
 		}
 	}
 
