@@ -10,6 +10,10 @@ func main() {
 
 	fmt.Println(s)
 
+	o := odd(sum, ii...)
+
+	fmt.Println("Sum of odd elements", o)
+
 }
 
 func sum(xi ...int) int {
@@ -18,4 +22,18 @@ func sum(xi ...int) int {
 		total = total + xi[i]
 	}
 	return total
+}
+
+func odd(f func(xi ...int) int, vi ...int) int {
+
+	var yi []int
+
+	for _, v := range vi {
+		if v%2 != 0 {
+			yi = append(yi, v)
+		}
+	}
+
+	return f(yi...)
+
 }
